@@ -1,0 +1,50 @@
+.UniversityRelatedForm-container{
+    width: 100%;
+}
+
+.UniversityRelatedForm{
+    font-size: large;
+}
+
+.requestedcoursename{
+    margin: 20px 0px;
+}
+
+.requestedcoursenameinput{
+    display: block;
+    margin-top: 10px;
+    width: 60%;
+    height: 20px;
+}
+
+.campusid{
+    margin: 20px 0px;
+}
+
+.campusid-input{
+    display: block;
+    margin-top: 10px;
+    width: 60%;
+    height: 20px;
+}
+
+
+.buttons{
+    margin: 20px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.createthesection {
+    display: inline-block; 
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: #2a00b7;
+    background-color: #2a00b7;
+    font-weight: lighter;
+    font-size: medium;
+  }
+  

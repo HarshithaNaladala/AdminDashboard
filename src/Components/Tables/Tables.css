@@ -1,0 +1,67 @@
+.export-button{
+    margin-left: 32px;
+    padding-bottom: 30px;
+}
+
+table th, table td{
+    border: 1px solid;
+    padding: 8px;
+}
+
+.heading{
+    background-color: #efefef;
+}
+
+.table{
+    margin: 0px 30px ;
+}
+
+.pagination{
+    margin: 10px 30px;
+}
+
+.message{
+    margin: 100px 400px;
+}
+
+.spinner{
+    margin: 150px 500px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.table {
+    overflow-x: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    .table {
+      overflow-x: hidden;
+    }
+  }
+
+  @media screen and (max-width: 915px) {
+    .table1 th:not(:nth-child(3), :nth-child(4), :nth-child(6)),
+    .table1 td:not(:nth-child(3), :nth-child(4), :nth-child(6)),
+    .table2 th:not(:nth-child(2), :nth-child(5), :nth-child(6)),
+    .table2 td:not(:nth-child(2), :nth-child(5), :nth-child(6)),
+    .table3 th:not(:nth-child(2), :nth-child(5), :nth-child(6)),
+    .table3 td:not(:nth-child(2), :nth-child(5), :nth-child(6)),
+    .table4 th:not(:nth-child(2), :nth-child(4), :nth-child(6)),
+    .table4 td:not(:nth-child(2), :nth-child(4), :nth-child(6)),
+    .table5 th:not(:nth-child(2), :nth-child(5), :nth-child(6)),
+    .table5 td:not(:nth-child(2), :nth-child(5), :nth-child(6)) {
+      display: none;
+    }
+  }
+  

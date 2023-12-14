@@ -1,0 +1,47 @@
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+svg{
+    margin: 18px 15px 10px 25px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+.name{
+    font-size: 35px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+li{
+    margin: 10px 20px;
+    list-style: none;
+}
+
+.dashboard{
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+.dashboard:hover{
+    text-decoration: underline;
+}
+
+.dashboard:visited{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    nav{
+        flex-direction: column;
+    }
+
+}
+

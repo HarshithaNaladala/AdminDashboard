@@ -1,0 +1,30 @@
+.SanboxCourse-container{
+    width: 100%;
+}
+
+.SandboxCourse{
+    font-size: large;
+}
+
+.noinfo{
+    margin: 30px 0px;
+}
+
+.buttons{
+    margin: 20px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.createthesection {
+    display: inline-block; 
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: #2a00b7;
+    background-color: #2a00b7;
+    font-weight: lighter;
+    font-size: medium;
+  }
