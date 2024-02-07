@@ -4,6 +4,7 @@ import Forms from "../Forms/Forms";
 import Tables from "../Tables/Tables";
 import './Home.css';
 import Subnavbar from "../SubNavbar/Subnavbar";
+import Footer from "../Footer/Footer";
 
 function Home(){
 
@@ -38,6 +39,7 @@ function Home(){
                 <div className="body">
                     {showForm && showSubnavbar && <Forms/>}
                     {showTables && showSubnavbar && <Tables/>}
+                    <Footer></Footer>
                 </div>
             </div>
         </div>

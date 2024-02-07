@@ -58,7 +58,7 @@ export default function SandboxCourse({user, firstName, lastName, campusEmail, r
                     <label>There is no additional information needed.</label>
                 </div>
                 <div className='buttons'>
-                    <button type="submit" className='createthesection'>Create the Section</button>
+                    <button type="submit" className='createthesection'>Create Section</button>
                 </div>
             </form>
         </div>

@@ -55,7 +55,7 @@ export default function BuildingSectionForm({user, firstName, lastName, campusEm
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        if (!user || !firstName || !lastName || !campusEmail || !subjectCode || !courseNumber || !semester || !academicYear || !campusId) {
+        if (!user || !firstName || !lastName || !campusEmail || !subjectCode || !courseNumber || !semester || !academicYear) {
             openModal("Please fill in all fields.");
             return;
           }

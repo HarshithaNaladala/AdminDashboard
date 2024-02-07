@@ -26,7 +26,7 @@ export default function UniversityRelatedForm({user, firstName, lastName, campus
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 
-        if (!user || !firstName || !lastName || !campusEmail || !courseName || !campusId) {
+        if (!user || !firstName || !lastName || !campusEmail || !courseName) {
             console.log('entered first if');
             window.alert("Please fill in all fields.");
             return;
@@ -83,7 +83,7 @@ export default function UniversityRelatedForm({user, firstName, lastName, campus
                     <input type="text" name="campusid" value={campusId} className='campusid-input' placeholder='' onChange={handleCampusIdChange}></input>
                 </div>
                 <div className='buttons'>
-                    <button type="submit" className='createthesection'>Create the Section</button>
+                    <button type="submit" className='createthesection'>Create Section</button>
                 </div>
             </form>
         </div>

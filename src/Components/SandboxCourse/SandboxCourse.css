@@ -23,8 +23,8 @@
     width: 200px;
     height: 40px;
     border-radius: 5px;
-    border-color: #2a00b7;
-    background-color: #2a00b7;
+    border-color: rgb(0, 51, 160);
+    background-color: rgb(0, 51, 160);
     font-weight: lighter;
     font-size: medium;
   }

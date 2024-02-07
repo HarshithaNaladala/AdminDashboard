@@ -1,0 +1,38 @@
+.footer {
+    background-color: rgb(0, 51, 160);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 50px 0px;
+  }
+
+  .main{
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+  }
+
+  .info, .info2{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  hr{
+    margin: 0px 16px;
+    border-color: #999;
+    border-width: 0px thin 0px 0px;
+    border-style: solid;
+    height: auto;
+    align-self: stretch;
+  }
+
+  a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  

@@ -5,14 +5,14 @@
 }
 
 .title{
-    background-color: rgb(125, 151, 235);
+    background-color: rgb(110, 139, 200);
     margin: 30px 0px 10px 0px;
     text-align: center;
     padding: 20px 0px;
     display: block;
     border-radius: 10px;
     width: 80%;
-    font-size: larger;
+    font-size: 20px;
 }
 
 .form{

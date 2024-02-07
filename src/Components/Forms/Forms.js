@@ -58,7 +58,7 @@ export default function Forms(){
 
     return(
         <div className="form-container">
-            <div className="title">Service-Now Form</div>
+            <div className="title">Course-creation Form</div>
             <div className='form-body'>
                 <form className='form'>
                 <div className='user' style={{display: 'flex', flexDirection}}>
