@@ -6,29 +6,6 @@
     font-size: large;
 }
 
-.requestedcoursename{
-    margin: 20px 0px;
-}
-
-.requestedcoursenameinput{
-    display: block;
-    margin-top: 10px;
-    width: 60%;
-    height: 20px;
-}
-
-.campusid{
-    margin: 20px 0px;
-}
-
-.campusid-input{
-    display: block;
-    margin-top: 10px;
-    width: 60%;
-    height: 20px;
-}
-
-
 .buttons{
     margin: 20px 0px;
     text-align: center;

@@ -3,7 +3,7 @@ import './Subnavbar.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-export default function Subnavbar({onFormClick, onTablesClick}){
+export default function Subnavbar({onFormClick, onTablesClick, onLogsClick}){
     const [activeTab, setActiveTab] = useState('forms');
 
     return(
@@ -15,6 +15,9 @@ export default function Subnavbar({onFormClick, onTablesClick}){
           </li>
           <li className={`List ${activeTab === 'tables' ? 'active' : ''}`}>
             <Link to={"/"} className='tables' onClick={() => { setActiveTab('tables'); onTablesClick(); }}>Tables</Link>
+          </li>
+          <li className={`List ${activeTab === 'logs' ? 'active' : ''}`}>
+            <Link to={"/"} className='logs' onClick={() => { setActiveTab('logs'); onLogsClick(); }}>Logs</Link>
           </li>
         </ul>
       </div>

@@ -17,6 +17,7 @@ table th, table td{
 
 .table{
     margin: 0px 30px ;
+    overflow-x: auto;
 }
 
 .pagination{
@@ -42,10 +43,6 @@ table th, table td{
       transform: rotate(360deg);
     }
 }
-
-.table {
-    overflow-x: auto;
-  }
 
   @media screen and (max-width: 768px) {
     .table {

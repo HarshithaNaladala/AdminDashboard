@@ -1,0 +1,40 @@
+.user, .fullname, .email{
+    margin: 20px 0px;
+} 
+
+.user-input{
+    margin-left: 90px;
+    width: 80%;
+    height: 20px;
+} 
+
+.f-input{
+    margin-left:82px;
+    width: 36%;
+    height: 20px;
+}
+
+.l-input{
+    margin-left: 10px;
+    width: 36%;
+    height: 20px;
+}
+
+.email-input{
+    margin-left: 20px;
+    width: 75%;
+    height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .user, .fullname, .email{
+        margin: 20px 0px;
+    } 
+    
+    .user-input, .f-input, .l-input, .email-input{
+        margin-top: 10px;
+        width: 50%;
+        height: 20px;
+        margin: 10px 0px 0px 0px;
+    } 
+}

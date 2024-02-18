@@ -1,0 +1,45 @@
+.subjectcode{
+    margin: 20px 0px;
+}
+
+.subjectcodeinput{
+    display: block;
+    margin-top: 10px;
+    width: 60%;
+    height: 20px;
+}
+
+.CourseNumber{
+    margin: 20px 0px;
+}
+
+.cn-input{
+    display: block;
+    margin-top:10px;
+    width: 60%;
+    height: 20px;
+}
+
+.Semester{
+    margin: 20px 0px;
+}
+
+.semester-input, .academicyear-input{
+    display: block;
+    margin-top: 10px;
+    width: 61%;
+    height: 25px;
+}
+
+.AcademicYear{
+    margin: 20px 0px;
+}
+
+.Campusid{
+    margin: 20px 0px;
+}
+
+.campusid-input{
+    display: block;
+    margin-top: 10px;
+}
