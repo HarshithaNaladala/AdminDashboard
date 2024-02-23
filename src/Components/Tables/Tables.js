@@ -64,7 +64,7 @@
 
     return (
       <>
-        <Dropdown onTableClick={setSelectedTable} onSelectSemester={setSelectedSemester} />
+        <Dropdown onTableClick={setSelectedTable} onSelectSemester={setSelectedSemester}  currentPage={currentPage} setCurrentPage={setCurrentPage}/>
 
         {!loading && (
             <div className="table">

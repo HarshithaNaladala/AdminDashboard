@@ -3,13 +3,14 @@ import './Dropdown.css';
 import SemesterDropdown from "./SemesterDropdown";
 import SemesterFetcher from "./SemesterFetcher";
 
-export default function Dropdown({ onTableClick, onSelectSemester }) {
+export default function Dropdown({ onTableClick, onSelectSemester, currentPage, setCurrentPage }) {
   const [selectedTable, setSelectedTable] = useState('');
   const [semesterOptions, setSemesterOptions] = useState([]);
 
   const handleTableChange = (event) => {
     setSelectedTable(event.target.value);
     onTableClick(parseInt(event.target.value));
+    setCurrentPage(1);
   };
 
   return (
@@ -28,7 +29,7 @@ export default function Dropdown({ onTableClick, onSelectSemester }) {
         <>
           <SemesterFetcher setSemesterOptions={setSemesterOptions} />
           {semesterOptions.length > 0 && (
-            <SemesterDropdown semesterOptions={semesterOptions} onSelectSemester={onSelectSemester} />
+            <SemesterDropdown semesterOptions={semesterOptions} onSelectSemester={onSelectSemester} currentPage={currentPage} setCurrentPage={setCurrentPage} />
           )}
         </>
       )}

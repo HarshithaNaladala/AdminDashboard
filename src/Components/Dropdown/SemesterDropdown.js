@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function SemesterDropdown({ semesterOptions, onSelectSemester }) {
+export default function SemesterDropdown({ semesterOptions, onSelectSemester, currentPage, setCurrentPage }) {
   const handleSemesterChange = (event) => {
     const selectedSemesterValue = event.target.value;
     onSelectSemester(selectedSemesterValue);
+    setCurrentPage(1);
   };
 
   return (
