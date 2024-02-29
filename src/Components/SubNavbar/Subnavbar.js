@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Subnavbar.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 export default function Subnavbar({ onFormClick, onTablesClick, onLogsClick }) {
   const [activeTab, setActiveTab] = useState("forms");

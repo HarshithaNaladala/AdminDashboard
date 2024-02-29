@@ -3,7 +3,7 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 import gsulogo from '../Assets/gsulogo.png';
 
-function Navbar({onDashboardClick}){
+function Navbar({onDashboardClick, onFormClick}){
     return(
         <nav style={{backgroundColor: '#0033a0'}}>
             <a href='index.html'>
@@ -13,7 +13,7 @@ function Navbar({onDashboardClick}){
             <div>
                 <ul>
                     <li>
-                        <Link to={"/"} className='dashboard' onClick={onDashboardClick}>Dashboard</Link>
+                        <Link to={"/"} className='dashboard' onClick={() => {onDashboardClick(); onFormClick();}}>Dashboard</Link>
                     </li>
                 </ul>
             </div>

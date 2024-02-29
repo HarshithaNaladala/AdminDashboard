@@ -52,6 +52,12 @@ function Home() {
     setShowLogs(false);
   };
 
+  const toggleDefault = () => {
+    setShowForm(true);
+    setShowLogs(false);
+    setShowTables(false);
+  }
+
   const toggleLogs = () => {
     setShowLogs(!showLogs);
     setShowForm(false);
@@ -68,7 +74,7 @@ function Home() {
     //   if (1 == 1) {
     return (
       <div className="main">
-        <Navbar onDashboardClick={toggleSubnavbar} />
+        <Navbar onDashboardClick={toggleSubnavbar} onFormClick={toggleDefault}/>
         <div className="body">
           <div className="sub-nav">
             {showSubnavbar && (
