@@ -1,7 +1,7 @@
 import React from 'react';
 import './UserFormFields.css';
 
-export default function UserFormFields({ user, firstName, lastName, campusEmail, handleUserChange, handleFirstNameChange, handleLastNameChange, handleCampusEmailChange, flexDirection }) {
+export default function UserFormFields({ userName, firstName, lastName, campusEmail, handleUserChange, handleFirstNameChange, handleLastNameChange, handleCampusEmailChange, flexDirection }) {
   return (
     <>
       <div className='user' style={{ display: 'flex', flexDirection }}>
@@ -10,9 +10,10 @@ export default function UserFormFields({ user, firstName, lastName, campusEmail,
             type="text" 
             name="user" 
             className='user-input' 
-            placeholder='User' 
-            value={user} 
-            onChange={handleUserChange}>
+            placeholder='User'
+            value={userName} 
+            onChange={handleUserChange}
+            disabled={true} >
         </input>
       </div>
       <div className='fullname' style={{ display: 'flex', flexDirection }}>

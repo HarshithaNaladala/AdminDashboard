@@ -15,6 +15,7 @@ function Home() {
   useEffect(() => {
     async function fetchLoginUrl() {
       try {
+        console.log("Entered try");
         const response = await fetch(
           "https://learningtoolsdev.gsu.edu/admindashboard2/auth/loggedin"
         );
@@ -62,7 +63,7 @@ function Home() {
   };
 
   /* For GSU Servers use if (user.d2lid) { */
-  if (user.d2lid) {
+  if (1 == 1) {
     /* For localhost testing use if (1 == 1) { */
     //   if (1 == 1) {
     return (
@@ -79,7 +80,7 @@ function Home() {
             )}
           </div>
           <div className="body">
-            {showForm && showSubnavbar && <Forms />}
+            {showForm && showSubnavbar && <Forms userName={user.name}/>}
             {showTables && showSubnavbar && <Tables />}
             {showLogs && showSubnavbar && <Logs />}
             <Footer></Footer>

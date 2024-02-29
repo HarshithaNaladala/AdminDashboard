@@ -55,8 +55,6 @@ export default function BSFormSubmitHandler({
           additionalInstructors: campusId,
         };
 
-        // const response = await axios.post('https://learningtoolsdev.gsu.edu/lti_tools/admindashboard/createcourse', data);
-        // const response = await axios.post('https://learningtoolsdev.gsu.edu/admindashboard/api/log?token=uwUdJxI/X17AOyqTDG9gY57pr7/QbGaFHGQtwsFDwEDvYgsccsVR4g==&page=1&name=j', data);
         const response = await axios.post('https://learningtoolsdev.gsu.edu/admindashboard/api/courses?token=uwUdJxI/X17AOyqTDG9gY57pr7/QbGaFHGQtwsFDwEDvYgsccsVR4g==', data);
 
         console.log('API Response:', response.data);

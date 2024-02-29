@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 80px;
+    height: auto;
   }
   
   .subnavbar-container ul {
@@ -44,6 +44,23 @@
   .subnavbar-container .List {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media screen and (max-width: 800px){
+    .subnavbar-container ul {
+      flex-direction: column; /* Place items vertically */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .subnavbar-container ul li {
+      float: none;
+      width: 100%; /* Add vertical spacing */
+    }
+
+    .subnavbar-container ul li a {
+      text-align: center; /* Center text horizontally */
+      margin: 5px 0px;
+    }
   }
 
 

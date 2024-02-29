@@ -11,23 +11,27 @@ export default function RenderLogsTable( {logs, currentPage, itemsPerPage} ) {
         <table className="LogsData">
             <thead>
                 <tr>
+                    <th>Date Added</th>
                     <th>Course Type</th>
                     <th>Requestor Email</th>
-                    <th>Subject Code</th>
-                    <th>Semester</th>
-                    <th>Academic Year</th>
-                    <th>Course Number</th>
+                    <th>Additional Instructors</th>
+                    <th>Course Offering Code</th>
+                    <th>Course Name</th>
+                    <th>Date Created</th>
+                    <th>Date Enrolled</th>
                 </tr>
             </thead>
             <tbody>
                 {currentData.map((row, index) => (
                     <tr key={index}>
+                        <td>{row.dateAdded}</td>
                         <td>{row.courseType}</td>
                         <td>{row.requestorEmail}</td>
-                        <td>{row.subjectCode}</td>
-                        <td>{row.semester}</td>
-                        <td>{row.academicYear}</td>
-                        <td>{row.courseNumber}</td>
+                        <td>{row.additionalInstructors}</td>
+                        <td>{row.courseOfferingCode}</td>
+                        <td>{row.courseName}</td>
+                        <td>{row.dateCreated}</td>
+                        <td>{row.dateEnrolled}</td>
                     </tr>
                 ))}
             </tbody>

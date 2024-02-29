@@ -7,12 +7,11 @@ import UserFormFields from "./UserFormFields";
 import WindowResizeUseEffect from "./WindowResizeUseEffect";
 import UserFormData from "./UserFormData";
 
-export default function Forms() {
+export default function Forms({ userName }) {
   const [selectedCourse, setSelectedCourse] = useState("");
   const [flexDirection, setFlexDirection] = useState("column");
 
   const {
-    user,
     firstName,
     lastName,
     campusEmail,
@@ -34,7 +33,7 @@ export default function Forms() {
 
   const renderFormFields = () => (
     <UserFormFields
-      user={user}
+      userName={userName}
       firstName={firstName}
       lastName={lastName}
       campusEmail={campusEmail}
@@ -48,7 +47,7 @@ export default function Forms() {
 
   const renderCourseForm = (Component) => (
     <Component
-      user={user}
+      user={userName}
       firstName={firstName}
       lastName={lastName}
       campusEmail={campusEmail}
@@ -58,7 +57,7 @@ export default function Forms() {
 
   return (
     <div className="form-container">
-      <div className="title">Course Creation Form</div>
+      <div className="form-title">Course Creation Form</div>
       <div className="form-body">
         <form className="form">
           {renderFormFields()}

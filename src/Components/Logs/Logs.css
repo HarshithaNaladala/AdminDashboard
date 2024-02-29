@@ -54,7 +54,7 @@ table {
     }
 }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 1200px) {
     .LogsData th:not(:nth-child(1), :nth-child(2), :nth-child(3)),
     .LogsData td:not(:nth-child(1), :nth-child(2), :nth-child(3)) {
         display: none;
