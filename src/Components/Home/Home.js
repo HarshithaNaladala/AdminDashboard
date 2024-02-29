@@ -10,6 +10,7 @@ import Auth from "../Auth/Auth";
 
 function Home() {
   const [user, setUser] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchLoginUrl() {
@@ -25,6 +26,8 @@ function Home() {
         }
       } catch (error) {
         console.error("Auth request error:", error);
+      } finally {
+        setLoading(false);
       }
     }
 
@@ -59,9 +62,9 @@ function Home() {
   };
 
   /* For GSU Servers use if (user.d2lid) { */
-  /* if (user.d2lid) { */
-  /* For localhost testing use if (1 == 1) { */
-  if (1 == 1) {
+  if (user.d2lid) {
+    /* For localhost testing use if (1 == 1) { */
+    //   if (1 == 1) {
     return (
       <div className="main">
         <Navbar onDashboardClick={toggleSubnavbar} />
@@ -84,7 +87,12 @@ function Home() {
         </div>
       </div>
     );
-  } else {
+  }
+  if (loading) {
+    return <div className="spinner"></div>;
+  }
+
+  if (!loading) {
     return <Auth />;
   }
 }

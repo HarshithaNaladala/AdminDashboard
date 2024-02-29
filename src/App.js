@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Components/Home/Home";
 import Forms from "./Components/Forms/Forms";
@@ -8,7 +8,7 @@ import Auth from "./Components/Auth/Auth";
 
 function App() {
   return (
-    <Router basename="/admindashboard">
+    <Router>
       <div>
         <Routes>
           <Route path="/" element={<Home />}></Route>
