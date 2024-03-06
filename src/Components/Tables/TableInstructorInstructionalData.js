@@ -26,9 +26,9 @@ export default function TableInstructorInstructionalData({ data, currentPage, it
                 <td>{row.EnrollmentDate}</td>
                 <td>{row.Name}</td>
                 <td>{row.Code}</td>
-                <td>{row.RoleId}</td>
+                <td>{row.RoleName}</td>
                 <td>{row.EnrolledUserCampusID}</td>
-                <td>{row.UserId}</td>
+                <td>{row.ModifiedByUserName}</td>
               </tr>
             ))}
           </tbody>

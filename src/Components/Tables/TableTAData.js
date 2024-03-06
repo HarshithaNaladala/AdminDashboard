@@ -28,7 +28,7 @@ export default function TableTAData({ data, currentPage, itemsPerPage }){
                 <td>{row.Code}</td>
                 <td>{row.RoleName}</td>
                 <td>{row.EnrolledUserCampusID}</td>
-                <td>{row.UserId}</td>
+                <td>{row.ModifiedByUserName}</td>
               </tr>
             ))}
           </tbody>

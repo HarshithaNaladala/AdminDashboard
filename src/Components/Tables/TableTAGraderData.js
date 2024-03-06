@@ -27,7 +27,7 @@ export default function TableTAGraderData({data, currentPage, itemsPerPage }){
                 <td>{row.Name}</td>
                 <td>{row.Code}</td>
                 <td>{row.EnrolledUserCampusID}</td>
-                <td>{row.RoleId}</td>
+                <td>{row.RoleName}</td>
                 <td>{row.SemesterName}</td>
               </tr>
             ))}
