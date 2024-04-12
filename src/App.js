@@ -1,24 +1,27 @@
-import React from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
-import Home from "./Components/Home/Home";
+import { 
+  HashRouter as Router,
+  Route, 
+  Routes, 
+} from "react-router-dom";
+
+import HomePage from "./Pages/Home/HomePage";
 import Forms from "./Components/Forms/Forms";
 import Tables from "./Components/Tables/Tables";
-import Auth from "./Components/Auth/Auth";
+import LoginPage from "./Pages/Login/LoginPage";
 
-function App() {
+import "./App.css";
+
+export default function App() {
   return (
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<HomePage />}></Route>
           <Route path="/forms" element={<Forms />} />
           <Route path="/tables" element={<Tables />} />
-          <Route path="/auth" element={<Auth />} />
+          <Route path="/auth" element={<LoginPage />} />
         </Routes>
       </div>
     </Router>
   );
 }
-
-export default App;
