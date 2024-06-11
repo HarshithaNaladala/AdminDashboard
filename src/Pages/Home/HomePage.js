@@ -21,9 +21,9 @@ function Home() {
     return <div className="spinner"></div>;
   }
 
-  if (!loading) {
-    return <LoginPage />;
-  }
+  // if (!loading) {
+  //   return <LoginPage />;
+  // }
 
   if (1 === 1) {
     return (
